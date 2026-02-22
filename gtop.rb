@@ -5,21 +5,21 @@
 class Gtop < Formula
   desc "A fast, terminal-based git repository info tool"
   homepage "https://github.com/fayssal-elmofatiche/gtop"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.3.0/gtop_0.3.0_darwin_amd64.tar.gz"
-      sha256 "db8453d94ae41b63af81bc01f06b7a2e58db66b48cafdc45a552dfae910b4a8b"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.4.0/gtop_0.4.0_darwin_amd64.tar.gz"
+      sha256 "bbd2d244716b4018e1619b84f1f08bd5adcd06e16e03661de83f7c2981d17c01"
 
       def install
         bin.install "gtop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.3.0/gtop_0.3.0_darwin_arm64.tar.gz"
-      sha256 "9ef1513c9506a99f141b9905fa71b51d6b724933c26a342a6c07e04869f5ac54"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.4.0/gtop_0.4.0_darwin_arm64.tar.gz"
+      sha256 "3586c9023c5a84a06a450f9ed1917e1c338af1a5ed6fe74db464dc2b65709751"
 
       def install
         bin.install "gtop"
@@ -29,15 +29,15 @@ class Gtop < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.3.0/gtop_0.3.0_linux_amd64.tar.gz"
-      sha256 "379399bb14ec29392c266e7d548d3d4c30dae4e28d5ff350e37b8cf05ca0a36c"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.4.0/gtop_0.4.0_linux_amd64.tar.gz"
+      sha256 "49fdd3e9be5368e6bd928bb1fbfc22db277da72f222755868f654f4b6f118428"
       def install
         bin.install "gtop"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.3.0/gtop_0.3.0_linux_arm64.tar.gz"
-      sha256 "9b2d711ae82401284fdf04a0152fe28d61ed37d9c5aff1730b15421481ba12b5"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.4.0/gtop_0.4.0_linux_arm64.tar.gz"
+      sha256 "e461555c9de0ddd01ccd306090bee59bf3e052ae7ce60a02fea7f2f879e198a6"
       def install
         bin.install "gtop"
       end
