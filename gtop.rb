@@ -5,21 +5,21 @@
 class Gtop < Formula
   desc "A fast, terminal-based git repository info tool"
   homepage "https://github.com/fayssal-elmofatiche/gtop"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.1/gtop_0.7.1_darwin_amd64.tar.gz"
-      sha256 "8eccfc6e0dbce97a3399d39228191fe23f38c138a4b194cf83f4b73ecaceb419"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.2/gtop_0.7.2_darwin_amd64.tar.gz"
+      sha256 "c5c2eb2f2bcff1ddccda86c140442da81f84a51896428fd3ee308ffdf0c497cf"
 
       define_method(:install) do
         bin.install "gtop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.1/gtop_0.7.1_darwin_arm64.tar.gz"
-      sha256 "2b87ad0cc671ffee5e0407cff626baa275ec026507b49ef48cd76e20a3e03b26"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.2/gtop_0.7.2_darwin_arm64.tar.gz"
+      sha256 "d538718158cd841c5bc808fe3ce300c9ce0b189275dac044ecfda493b638442b"
 
       define_method(:install) do
         bin.install "gtop"
@@ -29,15 +29,15 @@ class Gtop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.1/gtop_0.7.1_linux_amd64.tar.gz"
-      sha256 "d52678621facccb887f1841b14e6b60d6aa4cd77b4b83e4ce7af1f5a574cfab1"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.2/gtop_0.7.2_linux_amd64.tar.gz"
+      sha256 "9729046670e85ebc1ae8bdbc908954562408045498db7302b156be72aa4324c6"
       define_method(:install) do
         bin.install "gtop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.1/gtop_0.7.1_linux_arm64.tar.gz"
-      sha256 "a43e8525161032137a523d6b47bbc263d659b54a5adb0472b8037c1175a3af73"
+      url "https://github.com/fayssal-elmofatiche/gtop/releases/download/v0.7.2/gtop_0.7.2_linux_arm64.tar.gz"
+      sha256 "fdd4ac815c5e04ab2ddb502d9af000723fb2cd21ad001174b486ddd0b44efc23"
       define_method(:install) do
         bin.install "gtop"
       end
